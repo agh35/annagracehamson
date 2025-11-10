@@ -1,0 +1,7 @@
+Placeholder project image
+
+Replace this file with your project images in the `docs/assets/images/` folder. Example names:
+- project1.jpg
+- project2.jpg
+
+If you add images, update `docs/index.html` to point to the image filenames.
