@@ -29,19 +29,3 @@ Notes
 - The site is intentionally minimal and easy to edit. See `docs/index.html` and `docs/style.css` to tweak layout and styles.
 
 If you'd like, I can add a GitHub Actions workflow to auto-deploy or finish recommended VS Code extensions and tips.
-
-Automatic deploy with GitHub Actions
-
-I've added a workflow `.github/workflows/deploy.yml` that will deploy the contents of the `docs/` folder to the `gh-pages` branch whenever you push to `main`.
-
-After you push these changes to GitHub, the workflow will create/update the `gh-pages` branch. In your repository Settings → Pages, set the site source to the `gh-pages` branch (if not already set). For a user site named `username.github.io`, you can also publish from the repository root — if you prefer that, let me know and I can switch the workflow to push to the root of `main` instead.
-
-To push your local changes (from the repo root):
-
-```bash
-git add .
-git commit -m "Add site files and GitHub Actions deploy workflow"
-git push origin main
-```
-
-The workflow will run automatically and deploy the `docs/` contents to `gh-pages`.
